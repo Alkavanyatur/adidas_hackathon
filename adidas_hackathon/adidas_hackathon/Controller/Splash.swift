@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class Splash: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "trSplashToLogin", sender: self)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

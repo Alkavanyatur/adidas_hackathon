@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		BA8ECEE120B9E5AA00C04B34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEE020B9E5AA00C04B34 /* AppDelegate.swift */; };
-		BA8ECEE320B9E5AA00C04B34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEE220B9E5AA00C04B34 /* ViewController.swift */; };
+		BA8ECEE320B9E5AA00C04B34 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEE220B9E5AA00C04B34 /* Splash.swift */; };
 		BA8ECEE620B9E5AA00C04B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8ECEE420B9E5AA00C04B34 /* Main.storyboard */; };
 		BA8ECEE920B9E5AA00C04B34 /* adidas_hackathon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEE720B9E5AA00C04B34 /* adidas_hackathon.xcdatamodeld */; };
 		BA8ECEEB20B9E5AB00C04B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8ECEEA20B9E5AB00C04B34 /* Assets.xcassets */; };
 		BA8ECEEE20B9E5AB00C04B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8ECEEC20B9E5AB00C04B34 /* LaunchScreen.storyboard */; };
+		BA8ECEFB20B9F76A00C04B34 /* VCLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEFA20B9F76A00C04B34 /* VCLogin.swift */; };
+		BA8ECEFD20BA0C2700C04B34 /* VCSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEFC20BA0C2700C04B34 /* VCSignin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA8ECEDD20B9E5AA00C04B34 /* adidas_hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adidas_hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8ECEE020B9E5AA00C04B34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA8ECEE220B9E5AA00C04B34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA8ECEE220B9E5AA00C04B34 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		BA8ECEE520B9E5AA00C04B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA8ECEE820B9E5AA00C04B34 /* adidas_hackathon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = adidas_hackathon.xcdatamodel; sourceTree = "<group>"; };
 		BA8ECEEA20B9E5AB00C04B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA8ECEED20B9E5AB00C04B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA8ECEEF20B9E5AB00C04B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8ECEFA20B9F76A00C04B34 /* VCLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCLogin.swift; sourceTree = "<group>"; };
+		BA8ECEFC20BA0C2700C04B34 /* VCSignin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSignin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		BA8ECEDF20B9E5AA00C04B34 /* adidas_hackathon */ = {
 			isa = PBXGroup;
 			children = (
-				BA8ECEE020B9E5AA00C04B34 /* AppDelegate.swift */,
-				BA8ECEE220B9E5AA00C04B34 /* ViewController.swift */,
-				BA8ECEE420B9E5AA00C04B34 /* Main.storyboard */,
+				BA8ECEF720B9E62100C04B34 /* Controller */,
+				BA8ECEF620B9E61800C04B34 /* View */,
+				BA8ECEF520B9E60D00C04B34 /* Model */,
 				BA8ECEEA20B9E5AB00C04B34 /* Assets.xcassets */,
-				BA8ECEEC20B9E5AB00C04B34 /* LaunchScreen.storyboard */,
 				BA8ECEEF20B9E5AB00C04B34 /* Info.plist */,
-				BA8ECEE720B9E5AA00C04B34 /* adidas_hackathon.xcdatamodeld */,
 			);
 			path = adidas_hackathon;
+			sourceTree = "<group>";
+		};
+		BA8ECEF520B9E60D00C04B34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA8ECEE720B9E5AA00C04B34 /* adidas_hackathon.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA8ECEF620B9E61800C04B34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA8ECEE420B9E5AA00C04B34 /* Main.storyboard */,
+				BA8ECEEC20B9E5AB00C04B34 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA8ECEF720B9E62100C04B34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA8ECEE020B9E5AA00C04B34 /* AppDelegate.swift */,
+				BA8ECEE220B9E5AA00C04B34 /* Splash.swift */,
+				BA8ECEFA20B9F76A00C04B34 /* VCLogin.swift */,
+				BA8ECEFC20BA0C2700C04B34 /* VCSignin.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA8ECEE320B9E5AA00C04B34 /* ViewController.swift in Sources */,
+				BA8ECEFD20BA0C2700C04B34 /* VCSignin.swift in Sources */,
+				BA8ECEE320B9E5AA00C04B34 /* Splash.swift in Sources */,
 				BA8ECEE120B9E5AA00C04B34 /* AppDelegate.swift in Sources */,
+				BA8ECEFB20B9F76A00C04B34 /* VCLogin.swift in Sources */,
 				BA8ECEE920B9E5AA00C04B34 /* adidas_hackathon.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
