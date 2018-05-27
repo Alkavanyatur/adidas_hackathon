@@ -17,6 +17,7 @@
 		BA73F6E520BA730E00B62F6B /* SubContentGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73F6E420BA730E00B62F6B /* SubContentGlobal.swift */; };
 		BA73F6E720BA7CB600B62F6B /* TVCChallengeGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73F6E620BA7CB600B62F6B /* TVCChallengeGlobal.swift */; };
 		BA73F6E920BA8C7700B62F6B /* VCInfoChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73F6E820BA8C7700B62F6B /* VCInfoChallenge.swift */; };
+		BA73F6EB20BAA18800B62F6B /* VCInfoGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73F6EA20BAA18800B62F6B /* VCInfoGlobal.swift */; };
 		BA8ECEE120B9E5AA00C04B34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEE020B9E5AA00C04B34 /* AppDelegate.swift */; };
 		BA8ECEE320B9E5AA00C04B34 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8ECEE220B9E5AA00C04B34 /* Splash.swift */; };
 		BA8ECEE620B9E5AA00C04B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8ECEE420B9E5AA00C04B34 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		BA73F6E420BA730E00B62F6B /* SubContentGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentGlobal.swift; sourceTree = "<group>"; };
 		BA73F6E620BA7CB600B62F6B /* TVCChallengeGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCChallengeGlobal.swift; sourceTree = "<group>"; };
 		BA73F6E820BA8C7700B62F6B /* VCInfoChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCInfoChallenge.swift; sourceTree = "<group>"; };
+		BA73F6EA20BAA18800B62F6B /* VCInfoGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCInfoGlobal.swift; sourceTree = "<group>"; };
 		BA8ECEDD20B9E5AA00C04B34 /* adidas_hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adidas_hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8ECEE020B9E5AA00C04B34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8ECEE220B9E5AA00C04B34 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				BA73F6E020BA6CA800B62F6B /* TVCChallenge.swift */,
 				BA73F6E620BA7CB600B62F6B /* TVCChallengeGlobal.swift */,
 				BA73F6E820BA8C7700B62F6B /* VCInfoChallenge.swift */,
+				BA73F6EA20BAA18800B62F6B /* VCInfoGlobal.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				BA8ECEFD20BA0C2700C04B34 /* VCSignin.swift in Sources */,
 				BA8ECEE320B9E5AA00C04B34 /* Splash.swift in Sources */,
 				BA8ECEE120B9E5AA00C04B34 /* AppDelegate.swift in Sources */,
+				BA73F6EB20BAA18800B62F6B /* VCInfoGlobal.swift in Sources */,
 				BA73F6E520BA730E00B62F6B /* SubContentGlobal.swift in Sources */,
 				BA73F6E720BA7CB600B62F6B /* TVCChallengeGlobal.swift in Sources */,
 				BA73F6DF20BA69D900B62F6B /* VCHome.swift in Sources */,

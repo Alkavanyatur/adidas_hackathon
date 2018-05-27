@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class VCInfoChallenge: UIViewController {
+    
+    
+    var dicAll:[NSMutableDictionary] = []
+    var dicInfo:NSDictionary = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +30,17 @@ class VCInfoChallenge: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func activateChallenge(){
+        for dic in dicAll {
+            if dic["key"] as! String == dicInfo["key"] as! String{
+                dic["mode"] = "enable"
+            }else{
+                dic["mode"] = "disable"
+            }
+        }
+        let uid = Auth.auth().currentUser?.uid
+        Dataholder.sharedInstance.firDataBaseRef.child("Users").child(uid!).child("Challenge").setValue(dicAll)
+        print("PUSHED")
     }
-    */
-
+    
 }

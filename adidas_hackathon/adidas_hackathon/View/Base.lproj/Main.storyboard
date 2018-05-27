@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ybc-j7-LTZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="038-yR-ldD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -147,7 +147,7 @@
                                                         <rect key="frame" x="0.0" y="53" width="375" height="53"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXL-QR-AEa">
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@test.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXL-QR-AEa">
                                                                 <rect key="frame" x="8" y="16" width="359" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <nil key="textColor"/>
@@ -179,7 +179,7 @@
                                                         <rect key="frame" x="0.0" y="53" width="375" height="53"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9n-Eq-EME">
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345678" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9n-Eq-EME">
                                                                 <rect key="frame" x="8" y="16" width="359" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <nil key="textColor"/>
@@ -410,16 +410,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fjg-Aw-38I">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fjg-Aw-38I">
                                 <rect key="frame" x="16" y="176" width="343" height="427"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.2274509804" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="Edr-9j-sgp" customClass="TVCChallengeGlobal" customModule="adidas_hackathon" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGlobal" rowHeight="92" id="Edr-9j-sgp" customClass="TVCChallengeGlobal" customModule="adidas_hackathon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Edr-9j-sgp" id="Ycv-N3-vqY">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="91.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell_special_challenge" translatesAutoresizingMaskIntoConstraints="NO" id="k7F-A5-UhG">
@@ -435,16 +435,17 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.086274509799999996" green="0.2274509804" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="imageCell" destination="k7F-A5-UhG" id="vxU-hE-8s3"/>
                                             <outlet property="lblTimeLeft" destination="rgy-dd-km3" id="shR-fz-Ye9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="nha-wp-hRG" customClass="TVCChallenge" customModule="adidas_hackathon" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellChallenge" rowHeight="92" id="nha-wp-hRG" customClass="TVCChallenge" customModule="adidas_hackathon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="343" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nha-wp-hRG" id="EtG-y3-eNN">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="91.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell_challenge" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-p1-fQi">
@@ -465,6 +466,11 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzH-dV-QbC">
+                                                    <rect key="frame" x="0.0" y="1" width="344" height="91"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.45283069349315069" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjW-Nc-iZ4">
                                                     <rect key="frame" x="276" y="11" width="29" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -474,11 +480,13 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.086274509799999996" green="0.2274509804" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="imageCell" destination="Xgh-p1-fQi" id="dP7-ga-MWq"/>
                                             <outlet property="lblCellTitle" destination="qOQ-Qk-XgW" id="j0e-s6-WwZ"/>
                                             <outlet property="lblEnergy" destination="Roa-oC-qvU" id="MgH-A1-cPE"/>
                                             <outlet property="lblHeart" destination="HjW-Nc-iZ4" id="Xyq-5y-fTR"/>
+                                            <outlet property="viewOpacity" destination="JzH-dV-QbC" id="zuq-vo-40e"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -532,11 +540,33 @@
                     <connections>
                         <outlet property="table" destination="Fjg-Aw-38I" id="7Ys-zg-Jyk"/>
                         <segue destination="P7y-Lr-2bW" kind="show" identifier="trCellToInfo" id="E0K-a4-fQl"/>
+                        <segue destination="N2W-Pb-P1f" kind="show" identifier="trCellToGlobal" id="5W0-4W-MOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBL-ZL-PU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3162" y="733"/>
+            <point key="canvasLocation" x="3160.8000000000002" y="732.68365817091455"/>
+        </scene>
+        <!--Info Global-->
+        <scene sceneID="r3C-2V-cvD">
+            <objects>
+                <viewController storyboardIdentifier="challengeGlobalMoreInfo" id="N2W-Pb-P1f" customClass="VCInfoGlobal" customModule="adidas_hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qr7-nE-a3W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="register" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-w4-yn4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xQY-sV-EzU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUF-wU-UAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4372" y="562.66866566716647"/>
         </scene>
         <!--Info Challenge-->
         <scene sceneID="GIG-q0-lAg">
@@ -623,6 +653,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.2156862745" green="0.72156862749999995" blue="0.66285360500000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udT-U2-BXJ">
+                                <rect key="frame" x="244" y="53" width="115" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ACTIVAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateChallenge" destination="P7y-Lr-2bW" eventType="touchUpInside" id="rXb-QX-B85"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.2274509804" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQv-mJ-elH"/>
@@ -630,7 +670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dng-aN-QZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4327" y="1042"/>
+            <point key="canvasLocation" x="4372" y="1311.9940029985009"/>
         </scene>
         <!--Profile-->
         <scene sceneID="GNl-Po-GO4">
@@ -846,11 +886,12 @@
         <image name="cell_vs" width="334" height="106"/>
         <image name="energy_coin" width="34" height="34"/>
         <image name="heart_coin" width="39" height="39"/>
+        <image name="register" width="3839" height="5758"/>
         <image name="separacion" width="276" height="4"/>
         <image name="top_left_bg" width="126" height="63"/>
         <image name="top_right_bg" width="126" height="63"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cqS-rh-cTJ"/>
+        <segue reference="nbT-qC-pPN"/>
     </inferredMetricsTieBreakers>
 </document>
