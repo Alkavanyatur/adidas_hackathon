@@ -28,6 +28,7 @@ class WebRequest: NSObject {
                     response in
                     if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                         print("Data: \(utf8Text)")
+                        delegate.WRDComunication!(result: utf8Text)
                     }
             })
         }else{

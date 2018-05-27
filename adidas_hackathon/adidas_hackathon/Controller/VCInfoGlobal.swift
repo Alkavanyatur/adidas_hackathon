@@ -10,9 +10,13 @@ import UIKit
 
 class VCInfoGlobal: UIViewController {
 
+    @IBOutlet weak var lblTime: UILabel!
+    @IBOutlet weak var lblDesc: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lblDesc.text = "This challenge is to walk for 20 days"
+        lblTime.text = "2 days \n 23 hour \n 15 minutes"
         // Do any additional setup after loading the view.
     }
     

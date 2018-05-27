@@ -15,6 +15,7 @@ class TVCChallenge: UITableViewCell {
     @IBOutlet weak var lblHeart: UILabel!
     @IBOutlet weak var lblEnergy: UILabel!
     @IBOutlet weak var viewOpacity:UIView!
+    @IBOutlet weak var viewProgress: ViewProgressBar!
     
     
     override func awakeFromNib() {

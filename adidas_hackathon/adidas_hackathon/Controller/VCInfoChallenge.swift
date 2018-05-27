@@ -11,9 +11,14 @@ import FirebaseAuth
 
 class VCInfoChallenge: UIViewController {
     
+    @IBOutlet weak var imgTop:UIImageView!
+    @IBOutlet weak var lblChallenge: UILabel!
+    @IBOutlet weak var viewProgress: ViewProgressBar!
     
     var dicAll:[NSMutableDictionary] = []
     var dicInfo:NSDictionary = [:]
+    
+    var txt:String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,37 @@ class VCInfoChallenge: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        
+        let typeSport = dicInfo["typeSport"] as! String
+        
+        switch typeSport {
+        case "walk":
+            imgTop.image = #imageLiteral(resourceName: "challenge_walk")
+            break
+        case "swimming":
+            imgTop.image = #imageLiteral(resourceName: "challenge_swimming")
+            break
+        case "run":
+            imgTop.image = #imageLiteral(resourceName: "challenge_running")
+            break
+        case "hiking":
+            imgTop.image = #imageLiteral(resourceName: "challenge_hiking")
+            break
+        case "bike":
+            imgTop.image = #imageLiteral(resourceName: "challenge-bike")
+            break
+        default:
+            imgTop.image = #imageLiteral(resourceName: "challenge_walk")
+            
+        }
+        
+        let mode = dicInfo["mode"] as! String
+        if mode == "enable" {
+            viewProgress.progress = 0.7
+        }else{
+            viewProgress.progress = 0
+        }
+        lblChallenge.text = txt
     }
 
     override func didReceiveMemoryWarning() {
