@@ -8,10 +8,11 @@
 
 import UIKit
 
-class Splash: UIViewController {
+class Splash: UIViewController,WebRequestDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        WebRequest.sharedInstance.getGenericRequest(url:"",delegate:self)
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "trSplashToLogin", sender: self)
         }

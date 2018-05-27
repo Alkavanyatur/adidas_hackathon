@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class VCLogin: UIViewController {
 
@@ -56,6 +58,23 @@ class VCLogin: UIViewController {
         }
     }
     
+    
+    func loginF(email: String, pass: String){
+        
+        Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+            if error == nil {
+                self.avanzar()
+            } else {
+                //TODO NOTIFICAR ERROR
+            }
+        }
+ 
+    }
+    
+    func avanzar(){
+        self.performSegue(withIdentifier: "trLoginToSelect", sender: self)
+    }
+    
     func  setupView() {
         //backgroundImage
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -73,7 +92,11 @@ class VCLogin: UIViewController {
     }
     
     @IBAction func actionLogin(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "trLoginToTabBar", sender: self)
+        if let username = txtUsername.text, let pass = txtPass.text {
+            loginF(email: username, pass: pass)
+        }else{
+            print("no hay datos")
+        }
     }
     
     @IBAction func actionSignIn(_ sender: UIButton) {

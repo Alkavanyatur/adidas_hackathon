@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class VCSignin: UIViewController {
 
+    @IBOutlet weak var lblUsername: UILabel!
+    @IBOutlet weak var txtUsername: UITextField!
+    @IBOutlet weak var lblPass: UILabel!
+    @IBOutlet weak var txtPass: UITextField!
+    @IBOutlet weak var lblEmail: UILabel!
+    @IBOutlet weak var txtEmail: UITextField!
+    
     @IBOutlet weak var viewRoot: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -48,6 +59,32 @@ class VCSignin: UIViewController {
         backgroundImage.alpha = 0.80
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         viewRoot.insertSubview(backgroundImage, at: 0)
+    }
+    
+    @IBAction func actionRegister(_ sender: UIButton) {
+        if let username = txtUsername.text, let pass = txtPass.text, let email = txtEmail.text{
+                registroF(email: email, pass: pass)
+        }else{
+            print("no hay datos")
+        }
+    }
+    
+    func registroF(email:String, pass:String){
+        
+        Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
+            if error == nil {
+                //Dataholder.sharedInstance.firDataBaseRef.child("Usuarios").child((user?.uid)!).setValue("HOLA")
+                print("REGISTRADO!")
+                self.avanzar()
+            }else{
+                //print(error)
+            }
+        }
+        
+    }
+    
+    func avanzar(){
+        self.performSegue(withIdentifier: "trSigninToSelect", sender: self)
     }
 
 }
